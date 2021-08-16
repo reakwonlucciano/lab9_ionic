@@ -11,6 +11,10 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'status',
+    loadChildren: () => import('./status/status.module').then( m => m.StatusPageModule)
+  },
 ];
 
 @NgModule({
@@ -20,3 +24,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+export class IonicStoragemodule {}

@@ -1,5 +1,7 @@
 {
   "name": "storageLab",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
